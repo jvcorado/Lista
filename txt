@@ -1,0 +1,21 @@
+let postagens = [
+    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'João Victor'),
+    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'Erika Corado'),
+    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'Laura Pavani'),
+]
+
+console.log(postagens)
+
+
+
+
+    let imprimir = post.map(function(element){
+        return mostrar.innerHTML = `<h1>${element.titulo} ${element.mensagem} ${element.autor}</h1><br>`
+    })
+    console.log(clonePost)
+    console.log(imprimir)
+
+
+    mostrar.innerHTML = `<h1>${clonePost}</h1>`
+    mostrar.innerHTML = `${clonePost[0].mensagem}`
+    mostrar.innerHTML = `${clonePost[0].autor}`
