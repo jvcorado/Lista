@@ -80,4 +80,7 @@ textarea{
     button{
         width: 90vw !important;
     }
+    .card{
+        width: 90vw;
+    }
 }
