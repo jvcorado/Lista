@@ -63,8 +63,7 @@ textarea{
 
 @media screen and (max-width: 650px) {
     .campos{
-        width: 100vw;
-        background-color: aqua;
+        width: 100%;
     }
     textarea{
         padding: 10px;
