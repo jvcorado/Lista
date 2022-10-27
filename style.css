@@ -76,7 +76,7 @@ button{
         height: 70px;
     }
     input,textarea,button{
-        width: 100%;
+        width: 100vw;
     }
     content{
         width: 100vw;
