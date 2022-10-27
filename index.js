@@ -38,4 +38,7 @@ function publicar(){
 
     let add = post.push({titulo: tituloInput.value , text: textInput.value, autor: tituloInput.value})
     localStorage.setItem('post', add);
+    tituloInput.value = '';
+    textInput.value = '';
+    autorInput.value = '';
 }
