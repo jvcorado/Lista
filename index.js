@@ -19,7 +19,7 @@ function publicar(){
     const cautor = document.createElement('p');
 
     card.classList.add('card');
-    card.style.width = '50vw'
+    card.style.width = '100vw'
     card.style.margin = '10px'
     cbody.classList.add('card-body');
     ctitle.classList.add('card-title');
