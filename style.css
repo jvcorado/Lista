@@ -76,7 +76,7 @@ textarea{
     input, textarea{
     width: 90vw;
     }
-    .btn{
+    button{
         width: 90vw !important;
     }
 }
