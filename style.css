@@ -69,6 +69,7 @@ button{
 @media screen and (max-width: 650px) {
     .campos{
         width: 100vw;
+        margin: 10px;
     }
     textarea{
         padding: 100px;
