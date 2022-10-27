@@ -73,7 +73,10 @@ textarea{
     .campos{
         width: 100vw;
     }
-  input, textarea{
+    input, textarea{
     width: 90vw;
-  }
+    }
+    .btn{
+        width: 90vw !important;
+    }
 }
