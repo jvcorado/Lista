@@ -67,10 +67,13 @@ button{
 }
 
 @media screen and (max-width: 650px) {
+    .campos{
+        width: 100vw;
+    }
     input,textarea,button{
         width: 100%;
     }
     content{
-        width: 100%;
+        width: 100vw;
     }
   }
