@@ -69,7 +69,6 @@ button{
 @media screen and (max-width: 650px) {
     .campos{
         width: 100vw;
-        padding: 10px;
         background-color: aqua;
     }
     textarea{
@@ -77,7 +76,7 @@ button{
         height: 70px;
     }
     input,textarea,button{
-        width: 100vw;
+        width: 90vw;
     }
     content{
         width: 100vw;
