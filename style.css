@@ -70,6 +70,10 @@ button{
     .campos{
         width: 100vw;
     }
+    textarea{
+        padding: 100px;
+        height: 70px;
+    }
     input,textarea,button{
         width: 100%;
     }
