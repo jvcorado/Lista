@@ -29,7 +29,7 @@ main{
 
 input{
     margin: 10px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -39,7 +39,7 @@ textarea{
     width: 50vw;
     height: 50px;
     margin: 1% 0 2% 0;
-    padding: 13px;
+    padding: 20px;
     font-weight: normal;
     font-size: 1.2rem;
     border: 1.5px solid #1AA6B7;
@@ -52,12 +52,11 @@ textarea{
 
 button{
     width: 50vw;
-    padding: 10px;
+    padding: 20px;
     border-radius: 20px;
     border: none;
 }
 .content{
-
     width: 50vw;
     height: auto;
     display: flex;
@@ -69,9 +68,9 @@ button{
 
 @media screen and (max-width: 650px) {
     input,textarea,button{
-        width: 90vw;
+        width: 100%;
     }
     content{
-        width: 90vw;
+        width: 100%;
     }
   }
