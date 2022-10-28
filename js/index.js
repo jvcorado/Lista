@@ -1,5 +1,3 @@
-const userInput = document.querySelector("#user");
-const senhaInput = document.querySelector("#senha");
 const dataInput = document.querySelector("#data");
 const tituloInput = document.querySelector("#titulo");
 const textInput = document.querySelector("#text");
@@ -17,14 +15,7 @@ function reset(){
     textInput.value = ''
 }
 
-function logar(){
-    if(userInput.value === 'admin' && senhaInput.value === 'admin'){
-        location.href ="http://www.mozilla.org"
-    }
-    else{
-        alert('User ou senha invalidos')
-    }
-}
+
 
 
 function publicar(){
@@ -64,8 +55,7 @@ function publicar(){
         cbody.appendChild(ctext)
         cbody.appendChild(cautor)
         let add = post.push({titulo: tituloInput.value , text: textInput.value, autor: tituloInput.value})
-        localStorage.setItem('post', add);
-        reset()
+     
     }
     else{
         alert('Preencha os campos')
