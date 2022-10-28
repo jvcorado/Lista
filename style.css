@@ -98,6 +98,8 @@ textarea{
 }
 
 @media screen and (max-width: 650px) {
+
+
     .main{
         width: 100vw;
     }
@@ -106,6 +108,9 @@ textarea{
     }
     .campos{
         width: 100vw;
+    }
+    .picture-img{
+        width: 200px;
     }
     input, textarea{
     width: 90vw;
