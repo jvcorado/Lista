@@ -45,9 +45,6 @@ main{
     transition: color 200ms ease-in-out;
 }
 
-.picture-img{
-    max-width: 100%;
-}
 .picture:hover{
     background: #ccc;
     color: #777;
@@ -116,11 +113,9 @@ textarea{
     .picture{
         width: 90vw;
     }
-    .picture-img{
-        width: 100px !important;
-    }
+
     input, textarea{
-    width: 90vw;
+        width: 90vw;
     }
     button{
         width: 90vw !important;
