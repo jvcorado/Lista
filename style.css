@@ -60,9 +60,8 @@ main{
 
 
 input{
-    width: 50vw;
-    margin: 10px;
-    padding: 20px;
+    height: 50px;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     outline: none;
@@ -72,16 +71,12 @@ button{
 }
 
 textarea{
-    width: 50vw;
     height: 50px;
-    margin: 1% 0 2% 0;
-    padding: 20px;
+    padding: 10px;
     font-weight: normal;
-    font-size: 1.2rem;
     border: 1.5px solid #1AA6B7;
-    border-radius: 5px;
+    border-radius: 10px;
     outline: none;
-    resize: none;
     overflow: hidden;
     color: #000000;
 }
@@ -117,7 +112,6 @@ textarea{
         width: 90vw;
     }
     .text-hora{
-        
         display: block;
     }
 
