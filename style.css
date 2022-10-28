@@ -20,6 +20,9 @@ main{
     flex-direction: column;
     gap: 10px;
 }
+.text-hora{
+    display: none;
+}
 .campos{
     width: 100%;
     display: flex;
@@ -112,6 +115,10 @@ textarea{
     }
     .picture{
         width: 90vw;
+    }
+    .text-hora{
+        
+        display: block;
     }
 
     input, textarea{
