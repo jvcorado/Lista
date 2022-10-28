@@ -38,8 +38,9 @@ inputFile.addEventListener('change', function(e){
             imgFeita.classList.add('picture_img');
             pictureImage.innerHTML = '';
             pictureImage.appendChild(imgFeita);
+            
 
-     });
+    });
         reader.readAsDataURL(file);
         pictureImage.innerHTML = 'Image selected';
     }
@@ -66,8 +67,10 @@ function publicar(){
     ctitle.classList.add('card-title');
     ctext.classList.add('card-text');
     cautor.classList.add('card-text'); 
+
     
     if(!dataInput.value == '' && !tituloInput.value == '' && !textInput.value == '' && !autorInput.value ==''){
+        
         cdata.append(dataInput.value);
         ctitle.append(tituloInput.value)
         ctext.append(textInput.value)
@@ -86,8 +89,4 @@ function publicar(){
     else{
         alert('Preencha os campos')
     }
-        
-
-    
-
 }
