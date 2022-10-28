@@ -1,21 +1,37 @@
-let postagens = [
-    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'João Victor'),
-    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'Erika Corado'),
-    new criarPostagem('Nova Postagem', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum', 'Laura Pavani'),
-]
-
-console.log(postagens)
+const inputFile = document.querySelector(".picture_input");
+const pictureImage = document.querySelector(".picture_image");
+const pictureImageTxt = "Choose an image";
+pictureImage.innerHTML = pictureImageTxt;
 
 
 
+   <label class="picture" tabindex="0">
+                <input type="file" accept="image/*" class="picture_input" name="picture" id="picture">
+                <span class="picture_image text-white">
+                    <img class="picture-img img-fluid" src="" alt="">
+                </span>
+            </label>
 
-    let imprimir = post.map(function(element){
-        return mostrar.innerHTML = `<h1>${element.titulo} ${element.mensagem} ${element.autor}</h1><br>`
-    })
-    console.log(clonePost)
-    console.log(imprimir)
 
+inputFile.addEventListener('change', function(e){
+    const inputTarget = e.target;
+    const file = inputTarget.files[0];
 
-    mostrar.innerHTML = `<h1>${clonePost}</h1>`
-    mostrar.innerHTML = `${clonePost[0].mensagem}`
-    mostrar.innerHTML = `${clonePost[0].autor}`
+    if(file){
+        const reader = new FileReader();
+        reader.addEventListener('load', function(e){
+            const readerTarget = e.target;
+            const imgFeita = document.createElement('img');
+            var resultado = readerTarget.result;
+            imgFeita.src = resultado
+            imgFeita.style.width='100%';
+            pictureImage.innerHTML = '';
+            pictureImage.appendChild(imgFeita);
+    });
+        reader.readAsDataURL(file);
+        pictureImage.innerHTML = 'Image selected';
+    }
+    else{
+        pictureImage.innerHTML = pictureImageTxt;
+    }
+});

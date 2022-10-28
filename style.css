@@ -60,6 +60,7 @@ main{
 
 
 input{
+    width: 50vw;
     height: 50px;
     padding: 10px;
     border-radius: 10px;
@@ -71,6 +72,7 @@ button{
 }
 
 textarea{
+    width: 50vw;
     height: 50px;
     padding: 10px;
     font-weight: normal;

@@ -1,53 +1,31 @@
+const userInput = document.querySelector("#user");
+const senhaInput = document.querySelector("#senha");
 const dataInput = document.querySelector("#data");
 const tituloInput = document.querySelector("#titulo");
 const textInput = document.querySelector("#text");
 const autorInput = document.querySelector("#autor");
 const content = document.querySelector(".content");
-const inputFile = document.querySelector(".picture_input");
-const pictureImage = document.querySelector(".picture_image");
-const pictureImageTxt = "Choose an image";
-pictureImage.innerHTML = pictureImageTxt;
-
-
-
 
 const post = [
-    {
-        titulo,
-        text,
-        autor,
-    }
-    
+  
 ];
 
 function reset(){
+    dataInput.value = ''
     autorInput.value = ''
     tituloInput.value = ''
     textInput.value = ''
 }
 
-inputFile.addEventListener('change', function(e){
-    const inputTarget = e.target;
-    const file = inputTarget.files[0];
-
-    if(file){
-        const reader = new FileReader();
-        reader.addEventListener('load', function(e){
-            const readerTarget = e.target;
-            const imgFeita = document.createElement('img');
-            var resultado = readerTarget.result;
-            imgFeita.src = resultado
-            imgFeita.style.width='100%';
-            pictureImage.innerHTML = '';
-            pictureImage.appendChild(imgFeita);
-    });
-        reader.readAsDataURL(file);
-        pictureImage.innerHTML = 'Image selected';
+function logar(){
+    if(userInput.value === 'admin' && senhaInput.value === 'admin'){
+        location.href ="http://www.mozilla.org"
     }
     else{
-        pictureImage.innerHTML = pictureImageTxt;
+        alert('User ou senha invalidos')
     }
-});
+}
+
 
 function publicar(){
 
@@ -72,13 +50,14 @@ function publicar(){
     
     if(!dataInput.value == '' && !tituloInput.value == '' && !textInput.value == '' && !autorInput.value ==''){
         
-    
+
         cdata.append(dataInput.value);
         ctitle.append(tituloInput.value)
         ctext.append(textInput.value)
         cautor.append(autorInput.value)
         content.appendChild(card)
         card.appendChild(ctext)
+        card.appendChild(cimage)
         card.appendChild(cbody)
         cbody.appendChild(cdata)
         cbody.appendChild(ctitle)
