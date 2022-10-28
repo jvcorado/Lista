@@ -40,8 +40,6 @@ function publicar(){
 
     
     if(!dataInput.value == '' && !tituloInput.value == '' && !textInput.value == '' && !autorInput.value ==''){
-        
-
         cdata.append(dataInput.value);
         ctitle.append(tituloInput.value)
         ctext.append(textInput.value)
@@ -55,6 +53,7 @@ function publicar(){
         cbody.appendChild(ctext)
         cbody.appendChild(cautor)
         let add = post.push({titulo: tituloInput.value , text: textInput.value, autor: tituloInput.value})
+        reset();
      
     }
     else{
