@@ -109,6 +109,10 @@ textarea{
     .campos{
         width: 100vw;
     }
+    .picture_input{
+        padding: 20px;
+        border-radius: 10px;
+    }
     .picture{
         width: 90vw;
     }
