@@ -117,7 +117,7 @@ textarea{
         width: 90vw;
     }
     .picture-img{
-        width: 100px;
+        width: 100px !important;
     }
     input, textarea{
     width: 90vw;
