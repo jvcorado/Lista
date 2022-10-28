@@ -25,6 +25,7 @@ function reset(){
     tituloInput.value = ''
     textInput.value = ''
 }
+
 inputFile.addEventListener('change', function(e){
     const inputTarget = e.target;
     const file = inputTarget.files[0];
@@ -34,12 +35,11 @@ inputFile.addEventListener('change', function(e){
         reader.addEventListener('load', function(e){
             const readerTarget = e.target;
             const imgFeita = document.createElement('img');
-            imgFeita.src = readerTarget.result;
+            var resultado = readerTarget.result;
+            imgFeita.src = resultado
             imgFeita.classList.add('picture_img');
             pictureImage.innerHTML = '';
             pictureImage.appendChild(imgFeita);
-            
-
     });
         reader.readAsDataURL(file);
         pictureImage.innerHTML = 'Image selected';
@@ -68,9 +68,11 @@ function publicar(){
     ctext.classList.add('card-text');
     cautor.classList.add('card-text'); 
 
+
     
     if(!dataInput.value == '' && !tituloInput.value == '' && !textInput.value == '' && !autorInput.value ==''){
         
+    
         cdata.append(dataInput.value);
         ctitle.append(tituloInput.value)
         ctext.append(textInput.value)
