@@ -99,6 +99,7 @@ textarea{
 
     .main{
         width: 100vw !important;
+        padding: 10px !important;
     }
     .content{
         width: 90vw;
