@@ -109,8 +109,11 @@ textarea{
     .campos{
         width: 100vw;
     }
+    .picture{
+        width: 90vw;
+    }
     .picture-img{
-        width: 200px;
+        width: 90vw;
     }
     input, textarea{
     width: 90vw;
