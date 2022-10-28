@@ -37,7 +37,7 @@ inputFile.addEventListener('change', function(e){
             const imgFeita = document.createElement('img');
             var resultado = readerTarget.result;
             imgFeita.src = resultado
-            imgFeita.classList.add('picture_img');
+            imgFeita.style.width='100%';
             pictureImage.innerHTML = '';
             pictureImage.appendChild(imgFeita);
     });
