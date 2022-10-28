@@ -11,7 +11,14 @@
 </head>
 <body class="bg-dark">
     <main>
-        <div class="campos ">
+        <div class="campos">
+            <label class="picture" tabindex="0">
+                <input type="file" accept="image/*" class="picture_input" name="picture" id="picture">
+                <span class="picture_image text-white">
+                    <img class="picture-img" src="" alt="">
+                </span>
+            </label>
+            <input type="datetime-local" name="" id="data">
             <input id="titulo" type="text" placeholder="Digite o Titulo">
             <textarea name="text" id="text" cols="30" rows="10" placeholder="Digite o texto"></textarea>
             <input id="autor" type="text" placeholder="Digite o Autor">
